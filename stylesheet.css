@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/*-------------------------- wrapper --------------------------*/
+#wrapper {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*--------------------------- header ------------------------*/
+
+.header_img {
+    height: 100%;
+    width: 100%;
+}
+
+/*---------------------------- nav ----------------------------*/
+#nav ul {
+    display: grid;
+    list-style-type:none;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+#nav ul li {
+    background-color: green;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+    border-right: solid 1px white;
+}
+
+#nav ul li:last-child {
+    border-style: none;
+}
+
+#nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.middle_wrapper {
+    display: flex;
+    justify-content: space-between;
+} /*--------- mainとsideを分ける----------------*/
+
+/*-------------------- main------------------------*/
+#main {
+    width: 65%;
+}
+
+.main_top p {
+    padding: 30px 0 30px 0;
+}
+
+.main_box {
+    margin-bottom: 60px;
+    
+}
+
+.main_box h1 {
+    font-size: 20px;
+    background: linear-gradient(90deg, orange, yellow);
+    color: white;
+    border-left: solid 15px red;
+    padding-left: 15px;
+    margin-bottom: 10px;
+}
+
+.main_text {
+    display: flex;
+}
+
+.main_text a {
+    color: red;
+}
+
+.left {
+    width: 35%;
+    margin-right: 15px;
+}
+
+.right {
+    width: 35%;
+    margin-left: 15px;
+}
+
+
+/*------------------------------------ side ---------------------------------*/
+.side {
+    width:32%;
+    height: 750px;
+    background-color: pink;
+    margin-top: 40px;
+}
+
+.side_menu {
+    margin-top: 30px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+}
+
+.side_menu_top {
+    background-image: url(side_box_h2.png);
+    background-position: center;
+    font-size: 15px;
+    color: white;
+    padding: 7px;
+}
+
+.side_menu ul {
+    background-color: white;
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 0 10px 0;
+}
+
+.side_menu ul li {
+    list-style: none;
+    text-align: left;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    border-bottom: solid 2px pink;
+}
+
+.side_menu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/*---------------------------------------------- footer ----------------------------------------*/
+
+.footer {
+    background-color: #2E9AFE;
+    height: 50px;
+    text-align: center;
+    color: white;
+}
+
+.footer p {
+    position: relative;
+    top: 12px;
+}
+
+
+

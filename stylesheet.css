@@ -15,6 +15,7 @@
 }
 
 /*---------------------------- nav ----------------------------*/
+
 #nav ul {
     display: grid;
     list-style-type:none;
@@ -146,15 +147,44 @@
     top: 12px;
 }
 
+/*------------------------------ パソコン版 -----------------------*/
+@media (min-width: 1025px) {
+
+#menu_drawer {
+    display:none;
+}
+
+}
 /*------------------------------　モバイル版　-----------------------------*/
-@media (max-width: 700px) {
-    #wrapper {
+@media (max-width: 479px) {
+    #menu_drawer {
+        background-color: blue;
+        position: fixed;
+        top: 85%;
+        right: 10%;
+        width: 70px;
+        height: 70px;
+    }
+    
+        #wrapper {
         width: 100%;
     }
     
     .header_img {
         width: 100%;
     }
+    
+    #nav {
+        position: fixed;
+        width: 160px;
+        top: 25px;
+        right: -160px;
+    }
+    
+    .show {
+        transform: translate3d(-160px, 0, 0);
+    }
+    
     
     #nav ul {
         display: flex;
@@ -164,6 +194,7 @@
     
     #nav ul li {
     background-color: green;
+    height: 40px;
     text-align: center;
     padding: 5px 0px 5px 0px;
     border-right: solid 1px white;
@@ -219,10 +250,20 @@
 }
 
 /*----------------------- タブレット版 ------------------------------*/
-@media (max-width: 979px) and (min-width: 480px) {
+@media (max-width: 1024px) and (min-width: 480px) {
     #wrapper {
         width: 100%;
     }
+    
+    .left {
+        height: 70%;
+    }
+    
+    .right {
+        height: 70%;
+    }
+    
+    #menu_drawer {
+        display:none;
+    }
 }
-
-

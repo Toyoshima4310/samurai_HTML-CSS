@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
+    <button id="menu_drawer">開くよ</button>
 　<div id="wrapper">
     <div id="header">
        <img class="header_img" src="corridor.jpg" alt="廊下の様子">
@@ -74,5 +75,17 @@
         <p>&copy; 20xx ○○ All Rights Reserved</p>
     </div> <!-- footer -->
   </div> <!--wrapper-->
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script>
+  
+  'use strict';
+        /* global $ */
+        $(document).ready(function() {
+          $('#menu_drawer').on('click', function() { 
+              $('#nav').toggleClass('show');
+          });
+        });
+  </script>
 </body>
 </html>
